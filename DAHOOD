@@ -1,0 +1,533 @@
+if game.PlaceId == 2788229376 then
+
+
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("DUCKY HUB")
+
+local serv = win:Server("Da Hood Scripts", "")
+
+local btns = serv:Channel("GUIS")
+
+btns:Label("Scripts With Working Full Godmode") 
+
+
+btns:Button("Legacy X", function()
+DiscordLib:Notification("Notification", "Legacy X Key link Copied", "Okay!")
+
+setclipboard ("https://linkvertise.com/260001/keysystem?o=sharing")
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "KEY";
+	Text = "COPIED LINKVERTISTE LINK , DO IT FOR THE KEY";
+})
+
+
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Compwnter/LegacyX/main/script.lua'), true))()
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "READ";
+	Text = "WHEN USING GOD MODE U CAN SOMETIMES GET KICKED JUST DO IT AGAIN";
+})
+end)
+
+
+
+btns:Button("Krypt", function()
+
+ 
+DiscordLib:Notification("Notification", "You Need to be in the group to use krypt", "Okay!")
+
+
+setclipboard ("https://www.roblox.com/groups/9949037/Krypt-HQ#!/about")
+ 
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Lime X";
+	Text = "Copied Krypt Group Link, Please join first then use the script";
+})
+
+
+
+
+repeat
+wait()
+until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/krypt/main/loader"))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "READ";
+	Text = "WHEN USING GOD MODE U CAN SOMETIMES GET KICKED JUST DO IT AGAIN";
+})
+
+end)
+
+
+
+btns:Seperator()
+
+btns:Label("GUIS")
+
+
+btns:Button("Polakya", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/pixelheadx/Polakya/main/Bestscript.md"))();
+
+end)
+
+
+btns:Button("Valiant", function()
+loadstring(game:HttpGet("https://paste.ee/r/9kHAz/0", true))()
+
+end)
+
+
+
+
+btns:Button("Krypt X", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/krypt/main/kryptx"))()
+end)
+
+
+btns:Button("Zordion", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/wKg0DVLC", true))()
+
+end)
+
+btns:Button("Raycode X", function()
+loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+end)
+
+btns:Button("Trust Boy", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/XXAWmifh'))()
+
+end)
+
+
+
+
+
+btns:Button("Rayzor X (Good For Godmode)", function()
+	loadstring(game:HttpGet("https://paste.ee/r/0R3sZ/0", true))()
+end)
+
+btns:Button("Croa Hub", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/3zMt8VPZ", true))()
+
+end)
+
+
+btns:Button("Lora X V1", function()
+-- Lora X
+loadstring(game:HttpGet("https://pastebin.com/raw/jHBEa3Mv", true))()
+end)
+
+
+btns:Button("HoodShark", function()
+	loadstring(game:HttpGet("https://paste.ee/r/2Buxn/0", true))()
+end)
+
+btns:Seperator()
+
+btns:Label("Get Key")
+
+btns:Button("Copy Krypt Group Link", function()
+setclipboard ("https://www.roblox.com/groups/9949037/Krypt-HQ#!/about")
+end)
+
+btns:Button("Copy Polakya Key", function()
+DiscordLib:Notification("Notification", "Polakya Key Copied!", "Okay!")
+setclipboard ("TY9J992U3I12WIMSOAPPAPPAPA00A9A9AS9DIAMMMALAALOAIWUUS")
+end)
+
+
+btns:Button("Get Legacy X Key linkvertiste", function()
+DiscordLib:Notification("Notification", "Legacy X Key link Copied", "Okay!")
+setclipboard ("https://linkvertise.com/260001/keysystem?o=sharing")
+end)
+
+btns:Button("Copy Zordion Key", function()
+setclipboard ("zordioniscool")
+DiscordLib:Notification("Notification", "Zordion Key Copied!", "Okay!")
+
+end)
+
+
+
+
+
+local btns1 = serv:Channel("Scripts")
+
+
+btns1:Button("Shazam (Say Shazam!)", function()
+
+
+
+local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "Shazam";
+		Text = "Say Shazam! to activate/deactivate Shazam.";
+		Icon = "";
+		Duration = math.huge;
+		Button1 = "OK";
+		Callback = NotificationBindable;
+	})
+
+
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/CrossedLegacy/SHAZAM/main/.ENCRYPT'))();
+end)
+
+btns1:Button("Aimbot", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/wfwf/main/aimbot"))()
+
+end)
+
+btns1:Button("Aimbot 2", function()
+--aimlock source code
+--// Clone Detection
+for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
+    if v.Name == "ScreenGui" then
+        v:Destroy()
+    end
+end
+
+repeat
+    wait()
+until game:GetService("Players").LocalPlayer ~= nil
+
+if not game:GetService("Players").LocalPlayer.Character then
+    game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
+end
+
+
+
+--/ Variables & Da Hood Gui Clones Deletion
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local Workspace = game:GetService("Workspace")
+local CoreGui = game:GetService("CoreGui")
+
+local LockedPlayer = nil
+local Aimlock = nil
+
+for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
+    if v.Name == "dhgui" then
+        v:Destroy()
+    end
+end
+
+local mt = getrawmetatable(game)
+local namecall = mt.__namecall
+setreadonly(mt, false)
+
+if getrawmetatable then
+    local mt = getrawmetatable(game)
+    local namecall = mt.__namecall
+    setreadonly(mt, false)
+    
+    mt.__namecall = newcclosure(function(table, ...)
+        local args = {...}
+        local method = getnamecallmethod()
+        if method == "FireServer" and args[1] and args[1] == "UpdateMousePos" then
+            if not (args[3] and args[3] == "Aimlock") then
+                return nil
+            end
+        end
+        return namecall(table, ...)
+    end) 
+end
+
+local function FindPlrOnMouse()
+    for i, v in pairs(game.Workspace:FindPartsInRegion3(Region3.new(LocalPlayer:GetMouse().Hit.Position, LocalPlayer:GetMouse().Hit.Position))) do
+        local plr = game.Players:GetPlayerFromCharacter(v.Parent)
+        if plr ~= nil and plr ~= LocalPlayer then
+            return plr
+        end
+    end
+    return nil
+end
+
+-- // Gui
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+
+
+--// Gui Making
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.30297032, 0, 0.475625843, 0)
+Frame.Size = UDim2.new(0, 397, 0, 211)
+Frame.Active = true
+Frame.Draggable = true
+
+
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.0554156154, 0, 0.60189575, 0)
+TextButton.Size = UDim2.new(0, 136, 0, 50)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "Aimlock Tool"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0.570553482, 0, 0.60189575, 0)
+TextButton_2.Size = UDim2.new(0, 136, 0, 50)
+TextButton_2.Font = Enum.Font.Cartoon
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Position = UDim2.new(0.246851385, 0, 0.218009472, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.Cartoon
+TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+
+TextButton.MouseButton1Click:connect(function()
+    Aimlock = nil
+    
+    for i, v in pairs(LocalPlayer.Backpack:GetChildren()) do
+        if v.ClassName == "Tool" and v.Name == "Aimlock Tool" then
+            v:Destroy() 
+        end
+    end
+    for i, v in pairs(LocalPlayer.Character:GetChildren()) do
+        if v.ClassName == "Tool" and v.Name == "Aimlock Tool" then
+            v:Destroy() 
+        elseif v.ClassName == "Tool" then
+            v.Parent = LocalPlayer.Backpack
+        end
+    end
+    
+    local AimlockTool = Instance.new("Tool")
+    AimlockTool.Name = "Aimlock Tool"
+    AimlockTool.Parent = LocalPlayer.Backpack
+    AimlockTool.RequiresHandle = false
+    AimlockTool.TextureId = "rbxasset://1532350639"
+    
+    AimlockTool.Activated:Connect(function()
+        local Plr = FindPlrOnMouse()
+        
+        if Plr ~= nil and Plr.Character and Plr.Character:FindFirstChild("Head") and Plr.Character:FindFirstChild("UpperTorso") then
+            Aimlock = Plr 
+            
+            game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "AIMLOCK | Corpse";
+                Text = "Aimlocking towards: " .. Plr.Name .. ", use any gun and shoot anywhere";
+                Button1 = "Ok";
+                Duration = 2.5;
+            })
+        else
+            Aimlock = nil
+            
+            game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "AIMLOCK | Corpse";
+                Text = "No player clicked on, aimlocking towards mouse as normal";
+                Button1 = "Ok";
+                Duration = 2.5;
+            })
+        end
+    end)
+end)
+
+if getrawmetatable then
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChild("Head") then
+            game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character.Head.Position, "Aimlock")
+        elseif Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChildOfClass("Part") then
+            game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character:FindFirstChildOfClass("Part").Position, "Aimlock")
+        elseif Aimlock == nil then
+            game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", game:GetService("Players").LocalPlayer:GetMouse().Hit.Position, "Aimlock")
+        end
+    end)
+else
+    for i = 1, 10 do
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChild("Head") then
+                game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character.Head.Position)
+            elseif Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChildOfClass("Part") then
+                game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character:FindFirstChildOfClass("Part").Position)
+            end
+        end)
+        game:GetService("RunService").RenderStepped:Connect(function()
+            if Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChild("Head") then
+                game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character.Head.Position)
+            elseif Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChildOfClass("Part") then
+                game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character:FindFirstChildOfClass("Part").Position)
+            end
+        end)
+        game:GetService("RunService").Stepped:Connect(function()
+            if Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChild("Head") then
+                game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character.Head.Position)
+            elseif Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChildOfClass("Part") then
+                game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character:FindFirstChildOfClass("Part").Position)
+            end
+        end)
+    end
+end
+
+end)
+
+btns1:Label("Autorobb Scripts")
+
+
+btns1:Button("AutoRobb", function()
+loadstring(game:HttpGet("https://paste.ee/r/fd6Cb/0", true))()
+end)
+
+btns1:Button("AutoRobb 2", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/74VJ07iY", true))()
+end)
+
+btns1:Button("AutoRobb 3", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/z17wDE8W", true))()
+end)
+
+btns1:Button("AutoRobb 4 (Not Toggleable)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rapnz/scripts/master/DaHoodFarm.lua"))()
+
+end)
+
+
+local btns2 = serv:Channel("Extra")
+
+btns2:Button("Infinite Yield", function()
+local function callback(Text)
+		if Text == "Yes" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xaxaxaxaxaxaxaxaxa/Bypasses/main/Da-Hood", true))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		elseif Text == ("Custom") then
+		print ("No")
+		end
+	end
+
+
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "Script dangerous";
+		Text = "Lime X Will Load AntiCheatBypass , It is still not recommended to use Infinite Yield Since it can get you banned!, Would You like to run it anywyas?";
+		Icon = "";
+		Duration = 80;
+		Button1 = "Yes";
+		Button2 = "No";
+		Callback = NotificationBindable;
+	})
+end)
+
+
+
+btns2:Button("Ctrl Delete", function()
+local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse()
+
+Mouse.Button1Down:connect(function()
+if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
+if not Mouse.Target then return end
+Mouse.Target:Destroy()
+end)
+end)
+
+
+btns2:Button("Chat Bypass", function()
+    
+    	local function callback(Text)
+		if Text == "Swear Word GUI" then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/bedra45/chetbypasser/main/chetbypass'))()
+		elseif Text == ("Custom") then
+			loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+		end
+	end
+
+
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "Witch version would you like?";
+		Text = "Please Choose";
+		Icon = "";
+		Duration = 10;
+		Button1 = "Swear Word GUI";
+		Button2 = "Custom";
+		Callback = NotificationBindable;
+	})
+end)
+
+
+
+btns2:Button("Audio Logger", function()
+   	loadstring(game:HttpGet(('https://pastebin.com/raw/GmbrsEjM'),true))()
+end)
+
+btns2:Button("Fps Booster", function()
+	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+	local g = game
+	local w = g.Workspace
+	local l = g.Lighting
+	local t = w.Terrain
+	sethiddenproperty(l,"Technology",2)
+	sethiddenproperty(t,"Decoration",false)
+	t.WaterWaveSize = 0
+	t.WaterWaveSpeed = 0
+	t.WaterReflectance = 0
+	t.WaterTransparency = 0
+	l.GlobalShadows = false
+	l.FogEnd = 9e9
+	l.Brightness = 0
+	settings().Rendering.QualityLevel = "Level01"
+	for i, v in pairs(g:GetDescendants()) do
+		if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+		elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+			v.Transparency = 1
+		elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+			v.Lifetime = NumberRange.new(0)
+		elseif v:IsA("Explosion") then
+			v.BlastPressure = 1
+			v.BlastRadius = 1
+		elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+			v.Enabled = false
+		elseif v:IsA("MeshPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+			v.TextureID = 10385902758728957
+		end
+	end
+	for i, e in pairs(l:GetChildren()) do
+		if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+			e.Enabled = false
+		end
+	end
+	end)
+    
+    
+    btns2:Button("Animation Changer", function()
+	teclaopen = "M" ---Cambia la tecla, por la que gustes para cerrar la GUI
+
+	loadstring(game:HttpGet("https://god-x.000webhostapp.com/linkAnimatorEdit.lua", true))()
+	end)
+
+end
